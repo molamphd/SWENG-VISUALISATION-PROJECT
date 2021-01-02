@@ -13,6 +13,13 @@ import Yesod.Form.Bootstrap3 (BootstrapFormLayout (..), renderBootstrap3)
 import Text.Julius (RawJS (..))
 import Data.Aeson
 import System.Random (randomRIO)
+import Control.Monad       (mzero)
+import Data.Proxy
+import Data.Text
+import GHC.Generics
+import Network.HTTP.Client (defaultManagerSettings, newManager)
+import Servant.API
+import Servant.Client
 
 -- Define our data that will be used for creating the form.
 data FileForm = FileForm
@@ -86,4 +93,5 @@ randomList (x:xs) = do
   r  <- randomRIO (10,40)
   rs <- randomList xs
   return (User x r:rs)
+  
   

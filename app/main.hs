@@ -3,3 +3,7 @@ import Application (appMain)
 
 main :: IO ()
 main = appMain
+
+someFunc :: IO()
+someFunc=someFunc
+
