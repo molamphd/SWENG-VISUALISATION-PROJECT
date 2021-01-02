@@ -39,6 +39,10 @@ dependencies:
 - wai
 - foreign-store
 - random
+- servant 
+- servant-client
+- http-client 
+
 
 # The library contains all of our application code. The executable
 # defined below is just a thin wrapper.
@@ -73,6 +77,16 @@ executables:
     - condition: flag(library-only)
       buildable: false
 
+  github-get-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - github-get
+
 # Test suite
 tests:
   github-yesod-test:
@@ -83,6 +97,15 @@ tests:
     - github-yesod
     - hspec >=2.0.0
     - yesod-test
+
+  github-get-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
 
 # Define flags used by "yesod devel" to make compilation faster
 flags:
