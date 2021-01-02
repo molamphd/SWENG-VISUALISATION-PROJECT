@@ -1,0 +1,24 @@
+[{
+    "name": "Diego",
+    "commits": 10
+},
+{
+    "name": "Luca",
+    "commits": 20
+},
+{
+    "name": "John",
+    "commits": 30
+}, 
+{
+     "name": "Andrea",
+     "commits": 5
+},
+{
+     "name": "Jim",
+     "commits": 15
+},
+{
+     "name": "Steve",
+     "commits": 20
+}]
