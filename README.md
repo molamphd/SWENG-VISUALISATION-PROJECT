@@ -41,3 +41,19 @@ stack test --flag github-yesod:library-only --flag github-yesod:dev
 * There are several chatrooms you can ask for help:
 	* For IRC, try Freenode#yesod and Freenode#haskell
 	* [Functional Programming Slack](https://fpchat-invite.herokuapp.com/), in the #haskell, #haskell-beginners, or #yesod channels.
+
+## Diego Molamphy - 18326635
+
+* Unfortunately, I wasn't able to link the API to the yesod webpage properly to visual the data from the API. In hindsight, trying to do this project in Haskell was a mistake due to my general inexperience in working with 
+  Haskell. This made the project partiularly tricky. Using Python for this project, which I am more familiar with, would have probably been a better choice.
+
+* As a result, I have created a yesod webpage that demonstates what I would have liked to achieve with this project. I wanted my project to be able to get a repo from a GitHub user and display the name of each contributor
+  to the repository and the number of commits they made to that repository. I have visualized this data using an ordered barchart (highest number of commits to lowest number of commits) with the names of the contributors 
+  on the x-axis and the number of commits by each contributor on the y-axis. The repository name is the header of the webpage. The data is randomized in home.hs. 
+
+* Although we know that the number of commits by a developer isn't the be all and end all in measuring the sofware engineering process,  I believe had I successfully implemented my idea for this project it would have provided 
+  some valuable insights.
+
+* 1. stack build
+  2. stack run
+  3. Browse to localhost:3000

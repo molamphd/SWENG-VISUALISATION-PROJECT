@@ -24,23 +24,23 @@ data GitHubUser =
   GitHubUser { login :: Text
              , name  :: Maybe Text
              , email :: Maybe Text
-	     , location :: Maybe Text
-	     , company :: Maybe Text
-	     , blog :: Maybe Text
-	     , followers :: Integer
-	     , following :: Integer
-	     , created_at :: Maybe Text
-	     , updated_at :: Maybe Text 
+	           , location :: Maybe Text
+	           , company :: Maybe Text
+	           , blog :: Maybe Text
+	           , followers :: Integer
+	           , following :: Integer
+	           , created_at :: Maybe Text
+	           , updated_at :: Maybe Text 
              } deriving (Generic, FromJSON, Show)
 
 data GitHubRepo =
   GitHubRepo { name :: Text
              , fullname :: Maybe Text
              , language :: Maybe Text
-	     , size :: Integer 
-	     , has_issue :: Maybe Bool
-	     , created_at :: Maybe Text
-	     , updated_at :: Maybe Text 
+	           , size :: Integer 
+	           , has_issue :: Maybe Bool
+	           , created_at :: Maybe Text
+	           , updated_at :: Maybe Text 
              } deriving (Generic, FromJSON, Show)
 
 data RepoContributor =
@@ -51,9 +51,9 @@ data RepoContributor =
 
 data RepoLanguages =
   RepoLanguages   {  c :: Integer
-		   , python :: Integer
-		   , java :: Integer
-		   , haskell :: Integer
+		              , python :: Integer
+		              , java :: Integer
+		              , haskell :: Integer
                   } deriving (Generic, FromJSON, Show)
 
 
